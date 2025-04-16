@@ -1,0 +1,16 @@
+<div class="shop-grid">
+    <mat-card *ngFor="let izdelek of izdelki" class="izdelek-card">
+      <img mat-card-image [src]="izdelek.slika" [alt]="izdelek.ime" />
+      <mat-card-title>{{ izdelek.ime }}</mat-card-title>
+      <mat-card-subtitle>{{ izdelek.cena | currency:'EUR' }}</mat-card-subtitle>
+      <mat-card-content>
+        <p>{{ izdelek.opis }}</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button color="primary" (click)="cartService.addItem(izdelek)">
+          Dodaj v košarico
+        </button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+  

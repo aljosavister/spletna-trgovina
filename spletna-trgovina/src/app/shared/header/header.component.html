@@ -1,0 +1,15 @@
+<mat-toolbar color="primary">
+    <span class="logo">🛍️ Moja Trgovina</span>
+    <span class="spacer"></span>
+    <nav>
+      <a mat-button routerLink="/">Domov</a>
+      <a mat-button routerLink="/about">O nas</a>
+      <a mat-button routerLink="/services">Storitve</a>
+      <a mat-button routerLink="/shop" routerLinkActive="active">Trgovina</a>
+      <a mat-button routerLink="/contact">Kontakt</a>
+      <a mat-icon-button routerLink="/cart" [matBadge]="(cartService.items$ | async)?.length" matBadgeColor="accent">
+        <mat-icon>shopping_cart</mat-icon>
+      </a>
+    </nav>
+  </mat-toolbar>
+  

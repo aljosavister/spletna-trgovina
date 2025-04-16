@@ -1,0 +1,12 @@
+.shop-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .izdelek-card {
+    max-width: 300px;
+    margin: auto;
+  }
+  
