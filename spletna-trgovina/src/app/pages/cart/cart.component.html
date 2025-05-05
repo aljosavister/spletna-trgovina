@@ -1,1 +1,20 @@
-<p>cart works!</p>
+<h2>Košarica</h2>
+
+<section *ngIf="cartService.items$ | async as izdelki; else prazna">
+  <mat-card *ngFor="let izdelek of izdelki" class="izdelek-card">
+    <mat-card-title>{{ izdelek.ime }}</mat-card-title>
+    <mat-card-subtitle>{{ izdelek.cena | currency:'EUR' }}</mat-card-subtitle>
+    <mat-card-content>
+      <p>{{ izdelek.opis }}</p>
+    </mat-card-content>
+  </mat-card>
+
+  <div class="skupaj">
+    <p><strong>Skupaj:</strong> {{ getSkupnaCena(izdelki) | currency:'EUR' }}</p>
+    <button mat-raised-button color="accent" (click)="zakljuciNakup()">Zaključi nakup</button>
+  </div>
+</section>
+
+<ng-template #prazna>
+  <p>Košarica je prazna.</p>
+</ng-template>
