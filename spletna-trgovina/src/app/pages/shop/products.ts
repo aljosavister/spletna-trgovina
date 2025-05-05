@@ -10,26 +10,26 @@ export interface Izdelek {
   export const IZDELKI: Izdelek[] = [
     {
       id: 1,
-      ime: 'Eko majica',
-      opis: 'Majica iz 100% organskega bombaža.',
-      cena: 19.99,
-      slika: 'assets/eko-majica.webp',
-      kategorija: 'Oblačila'
+      ime: 'Zobna pasta v trajnostni embalaži',
+      opis: 'Zobna pasta brez odpadkov je odličen izdelek, ki zagotavlja trajnost in kakovost.',
+      cena: 7.11,
+      slika: 'assets/toothpaste.webp',
+      kategorija: 'Nega obraza'
     },
     {
       id: 2,
-      ime: 'Leseni USB ključ',
-      opis: '16GB ključ z leseno oblogo.',
-      cena: 12.50,
-      slika: 'assets/usb.jpg',
-      kategorija: 'Elektronika'
+      ime: 'Trajnostna skodelica za kavo',
+      opis: 'Večkratna skodelica za kavo je odličen izdelek, ki zagotavlja trajnost in kakovost.',
+      cena: 7.49,
+      slika: 'assets/cup.webp',
+      kategorija: 'Steklenice in skodelice'
     },
     {
       id: 3,
-      ime: 'Steklenička za vodo',
-      opis: '500ml kovinska steklenička.',
-      cena: 15.00,
-      slika: 'assets/steklenicka.jpg',
+      ime: 'Trajnostna nakupovalna vrečka',
+      opis: 'Večkratna nakupovalna vrečka je odličen izdelek, ki zagotavlja trajnost in kakovost.',
+      cena: 7.22,
+      slika: 'assets/bag.webp',
       kategorija: 'Dodatki'
     },
     // Dodaj še vsaj 6 drugih izdelkov
