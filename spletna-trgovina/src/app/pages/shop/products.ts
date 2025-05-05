@@ -13,7 +13,7 @@ export interface Izdelek {
       ime: 'Zobna pasta v trajnostni embalaži',
       opis: 'Zobna pasta brez odpadkov je odličen izdelek, ki zagotavlja trajnost in kakovost.',
       cena: 7.11,
-      slika: 'toothpaste.webp',
+      slika: '/images/toothpaste.webp',
       kategorija: 'Nega obraza'
     },
     {
@@ -21,7 +21,7 @@ export interface Izdelek {
       ime: 'Trajnostna skodelica za kavo',
       opis: 'Večkratna skodelica za kavo je odličen izdelek, ki zagotavlja trajnost in kakovost.',
       cena: 7.49,
-      slika: 'cup.webp',
+      slika: '/images/cup.webp',
       kategorija: 'Steklenice in skodelice'
     },
     {
@@ -29,7 +29,7 @@ export interface Izdelek {
       ime: 'Trajnostna nakupovalna vrečka',
       opis: 'Večkratna nakupovalna vrečka je odličen izdelek, ki zagotavlja trajnost in kakovost.',
       cena: 7.22,
-      slika: 'bag.webp',
+      slika: '/images/bag.webp',
       kategorija: 'Dodatki'
     },
     // Dodaj še vsaj 6 drugih izdelkov
