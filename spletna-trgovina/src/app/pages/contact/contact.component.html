@@ -1,1 +1,21 @@
-<p>contact works!</p>
+<h2>Kontaktirajte nas</h2>
+<form [formGroup]="form" (ngSubmit)="submit()">
+  <mat-form-field appearance="outline" class="field">
+    <mat-label>Ime</mat-label>
+    <input matInput formControlName="ime" required />
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="field">
+    <mat-label>Email</mat-label>
+    <input matInput type="email" formControlName="email" required />
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="field">
+    <mat-label>Sporočilo</mat-label>
+    <textarea matInput formControlName="sporocilo" required rows="5"></textarea>
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" type="submit" [disabled]="form.invalid">
+    Pošlji
+  </button>
+</form>
