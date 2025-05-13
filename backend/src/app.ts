@@ -10,6 +10,7 @@ import { fileURLToPath } from "url";
 import session from "express-session";
 import cookieParser from "cookie-parser";
 import { AppContext } from "./app-context.js";
+import cors from 'cors';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -38,6 +39,12 @@ export default class App {
       req.appContext = appContext;
       next();
     });
+
+    this.expressApplication.use(cors({
+      origin: 'http://localhost:4200',
+      methods: ['POST'],
+      allowedHeaders: ['Content-Type']
+    }));
 
     // Body parser (req.body)
     this.expressApplication.use(Express.json());

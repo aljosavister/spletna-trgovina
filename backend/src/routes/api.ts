@@ -68,5 +68,22 @@ export default class Api {
         res.send("Successfully uploaded files");
       }
     );
+
+
+    /**
+     * Open for all
+     * Contact form
+     */
+    this.router.post(
+      "/contact", async function (req: any, res) {
+      try {
+        // const appContext: AppContext = req.appContext;
+        console.log('Prejeto sporočilo:', req.body);
+        res.status(200).json({ message: 'OK' });
+      } catch (error) {
+        res.status(400).send("Error");
+      }
+    });
+
   }
 }

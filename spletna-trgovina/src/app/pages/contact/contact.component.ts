@@ -4,6 +4,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { CommonModule } from '@angular/common';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-contact',
@@ -13,7 +14,7 @@ import { CommonModule } from '@angular/common';
     ReactiveFormsModule,
     MatFormFieldModule,
     MatInputModule,
-    MatButtonModule
+    MatButtonModule,
   ],
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss']
@@ -21,7 +22,7 @@ import { CommonModule } from '@angular/common';
 export class ContactComponent {
   form!: FormGroup;
 
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder, private http: HttpClient) {
     this.form = this.fb.group({
       ime: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
@@ -29,11 +30,28 @@ export class ContactComponent {
     });
   }
 
+  success = false;
+
   submit() {
     if (this.form.valid) {
-      console.log('Kontaktno sporočilo:', this.form.value);
-      alert('Hvala za sporočilo! (simulirano)');
-      this.form.reset();
+      const data = this.form.value;
+
+      this.http.post('http://localhost:3000/api/contact', data).subscribe({
+        next: () => {
+          this.success = true;
+          this.form.reset();
+          this.form.markAsPristine();
+          this.form.markAsUntouched();
+          Object.keys(this.form.controls).forEach((key) => {
+            this.form.get(key)?.setErrors(null);
+          });
+          alert("Podatki so uspešno poslani.");
+        },
+        error: (err) => {
+          console.error('Napaka pri pošiljanju:', err);
+          alert('Prišlo je do napake. Poskusite znova kasneje.');
+        }
+      });
     }
   }
 }

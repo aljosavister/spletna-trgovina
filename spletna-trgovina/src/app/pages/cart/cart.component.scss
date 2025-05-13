@@ -1,5 +1,6 @@
 .izdelek-card {
     margin-bottom: 1rem;
+    padding: 0.3rem;
 }
   
 .skupaj {
@@ -7,3 +8,11 @@
     text-align: right;
 }
   
+section {
+  padding: 1rem;
+}
+
+:host {
+  display: block;
+  padding: 1rem;
+}
