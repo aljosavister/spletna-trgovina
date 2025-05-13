@@ -14,7 +14,7 @@ export const IZDELKI: Izdelek[] = [
     ime: 'Zobna pasta v trajnostni embalaži - Jagoda',
     opis: 'Zobna pasta brez odpadkov je odličen izdelek, ki zagotavlja trajnost in kakovost.',
     cena: 7.11,
-    slika: '/images/tp-jagoda.png',
+    slika: '/images/tp-jagoda.jpeg',
     kategorija: 'Nega obraza'
   },
   {
@@ -22,7 +22,7 @@ export const IZDELKI: Izdelek[] = [
     ime: 'Zobna pasta v trajnostni embalaži - Mentol',
     opis: 'Zobna pasta brez odpadkov je odličen izdelek, ki zagotavlja trajnost in kakovost.',
     cena: 7.11,
-    slika: '/images/tp-m.png',
+    slika: '/images/tp-m.jpeg',
     kategorija: 'Nega obraza'
   },
   {
@@ -30,7 +30,7 @@ export const IZDELKI: Izdelek[] = [
     ime: 'Zobna pasta v trajnostni embalaži - Ognjič',
     opis: 'Naravna zobna pasta z ognjičem za občutljive dlesni.',
     cena: 7.49,
-    slika: '/images/tp-o.png',
+    slika: '/images/tp-o.jpeg',
     kategorija: 'Nega obraza'
   },
   {
@@ -38,7 +38,7 @@ export const IZDELKI: Izdelek[] = [
     ime: 'Trajnostna skodelica za kavo',
     opis: 'Večkratna skodelica za kavo je odličen izdelek, ki zagotavlja trajnost in kakovost.',
     cena: 7.49,
-    slika: '/images/cup.png',
+    slika: '/images/cup.jpeg',
     kategorija: 'Steklenice in skodelice'
   },
   {
@@ -46,7 +46,7 @@ export const IZDELKI: Izdelek[] = [
     ime: 'Skodelica za čaj iz bambusa',
     opis: 'Elegantna in trajnostna skodelica za čaj za uporabo doma ali na poti.',
     cena: 6.95,
-    slika: '/images/cup-t.png',
+    slika: '/images/cup-t.jpeg',
     kategorija: 'Steklenice in skodelice'
   },
   {
@@ -54,7 +54,7 @@ export const IZDELKI: Izdelek[] = [
     ime: 'Termo skodelica iz nerjavečega jekla',
     opis: 'Ohranja vašo pijačo toplo ali hladno več ur.',
     cena: 12.99,
-    slika: '/images/cup-s.png',
+    slika: '/images/cup-s.jpeg',
     kategorija: 'Steklenice in skodelice'
   },
   {
@@ -62,7 +62,7 @@ export const IZDELKI: Izdelek[] = [
     ime: 'Trajnostna nakupovalna vrečka',
     opis: 'Večkratna nakupovalna vrečka je odličen izdelek, ki zagotavlja trajnost in kakovost.',
     cena: 7.22,
-    slika: '/images/bag.png',
+    slika: '/images/bag.jpeg',
     kategorija: 'Dodatki'
   },
   {
@@ -70,7 +70,7 @@ export const IZDELKI: Izdelek[] = [
     ime: 'Vrečka za sadje in zelenjavo',
     opis: 'Lahka mrežasta vrečka za večkratno uporabo v trgovini ali na tržnici.',
     cena: 3.89,
-    slika: '/images/bag-f.png',
+    slika: '/images/bag-f.jpeg',
     kategorija: 'Dodatki'
   },
   {
@@ -78,7 +78,7 @@ export const IZDELKI: Izdelek[] = [
     ime: 'Paket za darilo brez plastike',
     opis: 'Okolju prijazna embalaža za obdarovanje, brez plastike, samo papir in juta.',
     cena: 4.99,
-    slika: '/images/box.png',
+    slika: '/images/box.jpeg',
     kategorija: 'Dodatki'
   }
 ];
