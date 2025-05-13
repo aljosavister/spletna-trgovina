@@ -7,7 +7,7 @@
       <a mat-button routerLink="/services">Storitve</a>
       <a mat-button routerLink="/shop" routerLinkActive="active">Trgovina</a>
       <a mat-button routerLink="/contact">Kontakt</a>
-      <a mat-icon-button routerLink="/cart" [matBadge]="(cartService.items$ | async)?.length" matBadgeColor="accent">
+      <a mat-icon-button routerLink="/cart" [matBadge]="(cartService.items$ | async)?.length" matBadgeColor="accent" matBadgePosition="above after" style="margin-top: 0.9rem; margin-right: 0.5rem;">
         <mat-icon>shopping_cart</mat-icon>
       </a>
     </nav>

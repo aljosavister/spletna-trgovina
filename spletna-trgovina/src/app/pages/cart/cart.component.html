@@ -1,6 +1,6 @@
-<h2>Košarica</h2>
 
 <section *ngIf="cartService.items$ | async as izdelki; else prazna">
+  <h2>Košarica</h2>
   <mat-card *ngFor="let izdelek of izdelki" class="izdelek-card">
     <mat-card-title>{{ izdelek.ime }}</mat-card-title>
     <mat-card-subtitle>{{ izdelek.cena | currency:'EUR' }}</mat-card-subtitle>
@@ -18,3 +18,4 @@
 <ng-template #prazna>
   <p>Košarica je prazna.</p>
 </ng-template>
+
