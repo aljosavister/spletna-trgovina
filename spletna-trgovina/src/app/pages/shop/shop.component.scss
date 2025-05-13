@@ -1,13 +1,32 @@
 .shop-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-    gap: 1rem;
-    padding: 1rem;
-  }
-  
-  .izdelek-card {
-    max-width: 300px;
-    margin: auto;
-    padding: 0.3rem;
-  }
-  
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.izdelek-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+mat-card-title {
+  margin-left: 0.5rem;
+}
+
+mat-card-subtitle {
+  margin-left: 0.5rem;
+}
+
+mat-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+mat-card img {
+  aspect-ratio: 7 / 9;
+  object-fit: cover;  
+}
