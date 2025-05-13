@@ -36,7 +36,7 @@ export class ContactComponent {
     if (this.form.valid) {
       const data = this.form.value;
 
-      this.http.post('http://localhost:3000/api/contact', data).subscribe({
+      this.http.post('/api/contact', data).subscribe({
         next: () => {
           this.success = true;
           this.form.reset();
