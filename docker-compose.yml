@@ -1,0 +1,16 @@
+services:
+  angular-app:
+    image: nginx:latest
+    volumes:
+      - ./spletna-trgovina/dist/spletna-trgovina/browser/:/usr/share/nginx/html
+    ports:
+      - "8080:80"
+
+  node-backend:
+    image: node:latest
+    command: npm run start
+    volumes:
+      - ./backend:/usr/dist/
+    working_dir: /usr/dist/
+    ports:
+      - "3000:3000"

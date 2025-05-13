@@ -41,7 +41,7 @@ export default class App {
     });
 
     this.expressApplication.use(cors({
-      origin: 'http://localhost:4200',
+      origin: ['http://localhost:8080','http://localhost:4200'],
       methods: ['POST'],
       allowedHeaders: ['Content-Type']
     }));
